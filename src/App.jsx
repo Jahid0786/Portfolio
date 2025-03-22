@@ -1,12 +1,13 @@
-import { Outlet } from 'react-router-dom';
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import HeroSetion from './components/homepage/hero-section/'
-import Nav from './components/navbar'
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import HeroSetion from "./components/homepage/hero-section/";
+import Nav from "./components/navbar";
 import ScrollToTop from "./components/helper/scroll-to-top";
-import { Footer, About, Experience, Education, Skills } from './components'
+import { Footer, About, Experience, Education, Skills } from "./components";
+import Projects from "./components/homepage/projects";
 
 export const metadata = {
   title: "Portfolio of Jahid Ansari - Software Developer",
@@ -15,7 +16,6 @@ export const metadata = {
 };
 
 function App() {
-
   return (
     <>
       <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
@@ -26,12 +26,12 @@ function App() {
         <Experience />
         <Education />
         <Skills />
+        <Projects />
         <ScrollToTop />
       </main>
       <Footer />
     </>
-
-  )
+  );
 }
 
-export default App
+export default App;
